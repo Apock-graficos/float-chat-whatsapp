@@ -1,5 +1,5 @@
 # Float chat whatsapp
-<a href="https://www.youtube.com/ApockGraficos"><img src="assets/youtube.svg"> Apock graficos</a>
+<a href="https://www.youtube.com/ApockGraficos">👉 Apock graficos</a>
 
 ### implementation guide
 Copy HTML template and implement css and js XD
