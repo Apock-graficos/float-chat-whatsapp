@@ -14,15 +14,18 @@ Copy HTML template and implement css and js XD
 ### Declare script
 
 ```js
-const options = {
-    phone: 3000000000,      /* number phone */
-    phonePrefix: 10,        /* number phone prefix */
-    // position: 'end',     /* optional, 'end' | 'start' -> default 'end' */
-    // color: 'pink',       /* optional, 'green' | 'red' | 'blue' | 'orange' | 'pink' | 'purple' -> default 'green' */
-    // separe: 3            /* optional, 1 ~ 3 -> default 2 */
+new FloatChatWhatsapp('float-chat-whatsapp', options)
+```
+
+```TS
+interface Options {
+    phone: number; /* number phone */
+    phonePrefix: number; /* number phone prefix */
+    color?: 'green' | 'red' | 'blue' | 'orange' | 'pink' | 'purple'; /* optional, color -> defaul: green */
+    separe?: number; /* optional: separacion 1 ~ 3 -> default: 1*/
+    position?: 'end' | 'start'; /* optional: posicion -> default: end */
 }
 
-new FloatChatWhatsapp('float-chat-whatsapp', options)
 ```
 
 ### HTML guide
