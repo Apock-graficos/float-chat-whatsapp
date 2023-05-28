@@ -44,7 +44,12 @@ the class `display-none` tag allows you to hide the chat, while the chat is not 
 use *jvascript* to manipulate visibility.
 
 ```html
-<form class="chat-container display-none" autocomplete="off">
+<div class="ag-float-chat-whatsapp">
+    ...
+    <form class="chat-container display-none" autocomplete="off">
+        ...
+    </form>
+</div>
 ```
 
 #### Use avatar or icon
