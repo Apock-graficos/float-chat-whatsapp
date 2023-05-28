@@ -39,6 +39,14 @@ guide to apply css selectors in case of not using js
 | color theme | `theme-` + `green, red, orange, blue, pink, purple` | `theme-green` |
 
 
+### hide and unhide chat
+the class `display-none` tag allows you to hide the chat, while the chat is not visible.
+use *jvascript* to manipulate visibility.
+
+```html
+<form class="chat-container display-none" autocomplete="off">
+```
+
 #### Use avatar or icon
 This goes inside the container with the `<div class="chat-header">` selector, you can be the first or last element
 
