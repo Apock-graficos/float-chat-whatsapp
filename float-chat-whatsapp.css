@@ -60,7 +60,7 @@
 }
 .ag-float-chat-whatsapp button.effect-pause,
 .ag-float-chat-whatsapp .button.effect-pause {
-  animation-play-state: paused;
+  animation-play-state: paused !important;
   box-shadow: none !important;
 }
 .ag-float-chat-whatsapp .color-inherit {
