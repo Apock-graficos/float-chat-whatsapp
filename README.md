@@ -18,8 +18,9 @@ const options = {
     phone: 3000000000,      /* number phone */
     phonePrefix: 10,        /* number phone prefix */
     // position: 'end',     /* optional, 'end' | 'start' -> default 'end' */
-    // color: 'pink',       /* optional, 'green' | 'red' | 'blue' | 'orange' | 'pink' | 'purple' -> default 'green' */
+    // theme: 'pink',       /* optional, 'green' | 'red' | 'blue' | 'orange' | 'pink' | 'purple' -> default 'green' */
     // separe: 3            /* optional, 1 ~ 3 -> default 2 */
+    // ui: 'wafer'          /* optional, 'wafer' | 'waffle' | 'omelet' | 'marshmellow' -> default 'waffle' */
 }
 
 new FloatChatWhatsapp('float-chat-whatsapp', options)
@@ -29,14 +30,16 @@ new FloatChatWhatsapp('float-chat-whatsapp', options)
 guide to apply css selectors in case of not using js
 
 ```html
-<div class="ag-float-chat-whatsapp [position] [separed] [theme]" id="float-chat-whatsapp">
+<div class="ag-float-chat-whatsapp [position] [separed] [theme] [ui]" id="float-chat-whatsapp">
 ```
 
-| action      | option                                              | example       |
-| ----------- | --------------------------------------------------- | ------------- |
-| position    | `start` or `end`                                    | `start`       |
-| separed     | `separe-` + from 1 to 3                             | `separe-2`    |
-| color theme | `theme-` + `green, red, orange, blue, pink, purple` | `theme-green` |
+| action   | option                                              | example       |
+| -------- | --------------------------------------------------- | ------------- |
+| position | `start` or `end`                                    | `start`       |
+| separed  | `separe-` + from 1 to 3                             | `separe-2`    |
+| theme    | `theme-` + `green, red, orange, blue, pink, purple` | `theme-green` |
+| ui       | `ui-` + `wafer, waffle, omelet, marshmellow`        | `ui-omele`    |
+
 
 
 ### hide and unhide chat

@@ -5,15 +5,17 @@ var FloatChatWhatsapp = /** @class */ (function () {
         this.options = {
             phone: options && options.phone ? options.phone : null,
             phonePrefix: options && options.phonePrefix ? options.phonePrefix : null,
-            color: options && options.color ? options.color : 'green',
+            theme: options && options.theme ? options.theme : 'green',
             position: options && options.position ? options.position : 'end',
-            separe: options && options.separe ? options.separe : 1
+            separe: options && options.separe ? options.separe : 1,
+            ui: options && options.ui ? options.ui : 'waffle'
         };
         console.log("this.options", this.options);
         this.el = document.getElementById(el);
-        this.el.classList.add('theme-' + this.options.color);
+        this.el.classList.add('theme-' + this.options.theme);
         this.el.classList.add('separe-' + this.options.separe);
         this.el.classList.add(this.options.position);
+        this.el.classList.add('ui-' + this.options.ui);
         this.exe();
     }
     FloatChatWhatsapp.prototype.exe = function () {

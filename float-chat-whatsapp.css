@@ -5,6 +5,10 @@
   --font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif;
   --text-color: 255, 255, 255;
   --bg-color: 65, 73, 86;
+  --ui-avatar-icon: 50%;
+  --ui-button: 10px;
+  --ui-input: 10px;
+  --ui-chat-box: 6px;
   position: fixed;
   bottom: 0;
   font-family: var(--font-family);
@@ -36,6 +40,30 @@
 .ag-float-chat-whatsapp.theme-orange {
   --text-color: 65, 73, 86;
 }
+.ag-float-chat-whatsapp.ui-wafer {
+  --ui-avatar-icon: 0px;
+  --ui-button: 0px;
+  --ui-chat-box: 0px;
+  --ui-input: 0px;
+}
+.ag-float-chat-whatsapp.ui-waffle {
+  --ui-avatar-icon: 5px;
+  --ui-button: 5px;
+  --ui-chat-box: 5px;
+  --ui-input: 5px;
+}
+.ag-float-chat-whatsapp.ui-omelet {
+  --ui-avatar-icon: 12px;
+  --ui-button: 100px;
+  --ui-chat-box: 12px;
+  --ui-input: 8px;
+}
+.ag-float-chat-whatsapp.ui-marshmellow {
+  --ui-avatar-icon: 50%;
+  --ui-button: 20rem;
+  --ui-chat-box: 22px;
+  --ui-input: 15px;
+}
 .ag-float-chat-whatsapp button,
 .ag-float-chat-whatsapp .button {
   border: 0;
@@ -43,6 +71,7 @@
   cursor: pointer;
   text-decoration: none;
   outline: none !important;
+  border-radius: var(--ui-button);
 }
 .ag-float-chat-whatsapp button:active,
 .ag-float-chat-whatsapp .button:active {
@@ -103,7 +132,6 @@
   object-position: center;
   width: var(--wh-size);
   height: var(--wh-size);
-  border-radius: 100%;
   border: 2px solid rgba(255, 255, 255, 0.25);
   position: relative;
   --status-color: #6BE15C;
@@ -126,10 +154,6 @@
   bottom: 0;
   right: 0;
 }
-.ag-float-chat-whatsapp .item-icon,
-.ag-float-chat-whatsapp .avatar {
-  border-radius: 100rem;
-}
 .ag-float-chat-whatsapp .item-icon.md,
 .ag-float-chat-whatsapp .avatar.md {
   --wh-size: 55px;
@@ -137,6 +161,10 @@
 .ag-float-chat-whatsapp .item-icon.sm,
 .ag-float-chat-whatsapp .avatar.sm {
   --wh-size: 40px;
+}
+.ag-float-chat-whatsapp .item-icon:not(.button),
+.ag-float-chat-whatsapp .avatar {
+  border-radius: var(--ui-avatar-icon);
 }
 .ag-float-chat-whatsapp .icon {
   display: inline-block;
@@ -190,7 +218,7 @@
   width: 350px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: var(--ui-chat-box);
   position: absolute;
   bottom: 0;
   z-index: var(--z-index-chat);
@@ -198,7 +226,7 @@
 .ag-float-chat-whatsapp .chat-header {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 15px;
+  padding: 15px;
   align-items: center;
   gap: 15px;
   background-color: rgb(var(--bg-color));
@@ -218,7 +246,7 @@
   background-color: #fffeba;
 }
 .ag-float-chat-whatsapp .form-control-chat {
-  padding: 15px;
+  padding: 18px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -233,6 +261,7 @@
 .ag-float-chat-whatsapp .form-control-chat fieldset legend {
   font-size: 0.9rem;
   color: #979797;
+  margin-bottom: 0.25rem;
 }
 .ag-float-chat-whatsapp .form-control-chat textarea,
 .ag-float-chat-whatsapp .form-control-chat input {
@@ -246,7 +275,7 @@
   background-color: #ffffff;
   border: 1px solid rgba(var(--bg-color), 0.25);
   outline: none !important;
-  border-radius: 10px;
+  border-radius: var(--ui-input);
   font-family: var(--font-family);
 }
 .ag-float-chat-whatsapp .form-control-chat textarea {
@@ -259,8 +288,8 @@
   padding-top: 0;
 }
 .ag-float-chat-whatsapp .chat-footer .button {
-  border-radius: 12px;
   width: 100%;
+  border-radius: var(--ui-input);
   padding: 12px 15px;
 }
 
