@@ -2,6 +2,7 @@ var FloatChatWhatsapp = /** @class */ (function () {
     function FloatChatWhatsapp(el, options) {
         if (options === void 0) { options = null; }
         this.selectorDnone = 'display-none';
+        this.effectClassname = 'effect-pause';
         this.options = {
             phone: options && options.phone ? options.phone : null,
             phonePrefix: options && options.phonePrefix ? options.phonePrefix : null,
@@ -28,7 +29,7 @@ var FloatChatWhatsapp = /** @class */ (function () {
         // button toggle open-close
         btnToggle.forEach(function (btn) { return btn.addEventListener('click', function () {
             chat.classList.toggle(_this.selectorDnone);
-            btnToggle[0].classList.toggle('effect-pause');
+            btnToggle[0].classList.toggle(_this.effectClassname);
         }); });
         // subtilte
         subtitle.innerText = this.formatPhoneNumber();
@@ -48,6 +49,7 @@ var FloatChatWhatsapp = /** @class */ (function () {
                     clearTimeout(time_1);
                     e.target.reset();
                     chat.classList.add(_this.selectorDnone);
+                    document.querySelectorAll('[data-btn="button-toggle"]')[0].classList.remove(_this.effectClassname);
                 }, 500);
             }
             else {
