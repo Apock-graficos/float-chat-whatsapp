@@ -19,7 +19,7 @@ const options = {
     phonePrefix: 10,        /* number phone prefix */
     // position: 'end',     /* optional, 'end' | 'start' -> default 'end' */
     // theme: 'pink',       /* optional, 'green' | 'red' | 'blue' | 'orange' | 'pink' | 'purple' -> default 'green' */
-    // separe: 3            /* optional, 1 ~ 3 -> default 2 */
+    // separe: 3,           /* optional, 1 ~ 3 -> default 2 */
     // ui: 'wafer'          /* optional, 'wafer' | 'waffle' | 'omelet' | 'marshmellow' -> default 'waffle' */
 }
 
