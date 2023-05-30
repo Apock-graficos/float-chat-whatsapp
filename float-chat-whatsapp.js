@@ -8,7 +8,7 @@ var FloatChatWhatsapp = /** @class */ (function () {
             phonePrefix: options && options.phonePrefix ? options.phonePrefix : null,
             theme: options && options.theme ? options.theme : 'green',
             position: options && options.position ? options.position : 'end',
-            separe: options && options.separe ? options.separe : 1,
+            separe: options && options.separe ? options.separe : 2,
             ui: options && options.ui ? options.ui : 'waffle'
         };
         console.log("this.options", this.options);
